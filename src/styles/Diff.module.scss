@@ -1,0 +1,97 @@
+.diff {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 245px;
+
+  @media (max-width: 1025px) {
+    margin-top: 0;
+  }
+
+  .list_products {
+    max-width: 448px;
+
+    @media (max-width: 425px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box_diff {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 20px;
+
+      @media (max-width: 425px) {
+        flex-direction: column;
+        text-align:center;
+      }
+    }
+
+    .box_diff:last-of-type {
+      margin-bottom: 32px;
+    }
+
+    .content{
+      width: 33rem;
+
+      @media (max-width: 425px) {
+        width: 100%;
+        padding: 0 2rem 0 2rem;
+      }
+
+      .image {
+        margin-right: 43px;
+      }
+  
+      .p2averta {
+        font-family: "Averta-Bold";
+        font-size: 16px;
+        line-height: 120%;
+        color: #3d43ac;
+        text-align: left;
+        text-transform: uppercase;
+
+        @media (max-width: 425px) {
+          text-align: center;
+        }
+      }
+  
+      .p3 {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 150%;
+        color: #5c6476;
+      }
+    }
+  }
+
+  .diff_image {
+    max-width: 710px;
+
+    @media (max-width: 1025px) {
+      display: none;
+    }
+  }
+
+  .diff_image_mob {
+    display: none;
+  }
+
+  .red_arrows {
+    position: absolute;
+    left: calc(100vw - 1024px);
+    margin: 0;
+  }
+
+  @media (max-width: 1025px) {
+    .diff_image_mob {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,271 @@
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__div {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1216px;
+  width: 100vw;
+  margin-top: 30px;
+  z-index: 200;
+
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: background-color 0.3s ease;
+
+  @media only screen and (max-width: 961px) {
+    justify-content: center;
+  }
+
+  .logo {
+    transition: all 0.4s;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 93px;
+
+  @media only screen and (max-width: 1210px) {
+    gap: 0;
+  }
+
+  @media only screen and (max-width: 961px) {
+    position: fixed;
+    right: 0;
+    top: 0;
+
+    height: 100%;
+
+    flex-direction: column;
+    justify-content: flex-start;
+
+    background-color: white;
+    padding: 1rem 2rem;
+
+    transition: 0.2s ease-out;
+
+    transform: translateX(100%);
+  }
+
+  .dropdownButton {
+    position: relative;
+    cursor: pointer;
+  }
+
+  .dropdown {
+    left: -16px;
+    width: 240.59px;
+    height: auto;
+    background: #ffffff;
+    border-radius: 7px;
+    padding: 30px 20px;
+    margin-top: 20px;
+    position: relative;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+
+    .dropdownIcon {
+      position: absolute;
+      top: -15px;
+      left: 100px;
+    }
+
+    li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      margin: 0;
+      text-align: left;
+
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 150%;
+      color: #3d43ac;
+    }
+  }
+
+  .visible {
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+}
+
+.openDrawer {
+  transform: translateX(0);
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  list-style: none;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+
+  @media only screen and (max-width: 961px) {
+    flex-direction: column;
+    gap: 32px;
+  }
+}
+
+.menu ul li a,
+.dropdownButton > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 112%;
+  text-align: center;
+  letter-spacing: 3px;
+
+  color: #ffffff;
+
+  margin: 0px 54px;
+
+  text-transform: uppercase;
+  transition: 0.3s ease;
+
+  @media only screen and (max-width: 961px) {
+    color: #57a0f5;
+  }
+
+  &:hover {
+    color: #bbbfc9;
+    transition: 0.3s ease;
+  }
+}
+
+.menu__redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media only screen and (max-width: 961px) {
+    margin-top: 32px;
+  }
+
+  a:hover {
+    transform: translate3d(0, -2px, 0);
+    transition: 0.3s ease;
+  }
+}
+
+.menu__redes a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.hamburgerbutton {
+  height: 3rem;
+  width: 3rem;
+  position: relative;
+  font-size: 12px;
+
+  display: none;
+
+  @media only screen and (max-width: 961px) {
+    display: block;
+  }
+
+  /* Remove default button styles */
+  border: none;
+  background: transparent;
+  outline: none;
+
+  cursor: pointer;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    top: -25%;
+    left: -25%;
+  }
+
+  .lines {
+    top: 50%;
+    margin-top: -0.125em;
+
+    &,
+    &:after,
+    &:before {
+      height: 2px;
+      pointer-events: none;
+      display: block;
+      content: "";
+      width: 100%;
+      background-color: #fff;
+      position: absolute;
+    }
+
+    &:after {
+      /* Move bottom line below center line */
+      top: -0.8rem;
+    }
+
+    &:before {
+      /* Move top line on top of center line */
+      top: 0.8rem;
+    }
+  }
+}
+
+.sticky {
+  padding: 8px;
+  justify-content: space-around;
+
+  transition: background-color 0.3s ease;
+  background-color: #242756;
+  box-shadow: 0px 51px 80px rgb(86 80 196 / 8%),
+    0px 15.375px 24.1177px rgb(86 80 196 / 5%),
+    0px 6.38599px 10.0172px rgb(86 80 196 / 4%),
+    0px 2.30969px 3.62304px rgb(86 80 196 / 3%);
+  border-radius: 8px;
+
+  .logo {
+    max-width: 120px;
+    transition: all 0.4s;
+  }
+
+  @media only screen and (max-width: 961px) {
+    border-radius: 0;
+    margin-top: 0;
+  }
+}

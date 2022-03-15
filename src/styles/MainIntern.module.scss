@@ -1,0 +1,51 @@
+.main {
+	width: 100%;
+	height: 562px;
+	background-size: cover;
+	overflow: hidden;
+	background-color: #eae2d9;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	.section {
+		width: 100%;
+	}
+
+	.image_div {
+		display: flex;
+		align-items: center;
+		gap: 35px;
+	}
+
+	h2 {
+		max-width: 390px;
+		width: 100%;
+		text-transform: uppercase;
+	}
+
+	.arrow_down_main {
+		margin-top: 53px;
+	}
+}
+
+.sobre {
+	background: url("../assets/img/sobre/sobre-fundo.png") no-repeat center
+			center,
+		#f4efea;
+	background-size: cover;
+}
+
+.contato {
+	background: url("../assets/img/contato/contato-fundo.png") no-repeat center
+			center,
+		#f6f2ee;
+	background-size: cover;
+}
+
+.interna {
+	background: url("../assets/img/fundo-interna.png") no-repeat center center,
+		#f6f2ee;
+	background-size: cover;
+}

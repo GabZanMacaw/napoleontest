@@ -1,0 +1,95 @@
+/*FONTES*/
+
+h2.averta {
+  font-family: "Averta-Black";
+  font-size: 56px;
+  line-height: 115%;
+  /* or 64px */
+
+  text-align: center;
+  letter-spacing: 5px;
+
+  color: #57a0f5;
+  text-transform: uppercase;
+}
+
+h3.averta {
+  font-family: "Averta-Black";
+  font-size: 40px;
+  line-height: 130%;
+  /* identical to box height, or 52px */
+
+  letter-spacing: 5px;
+
+  color: #57a0f5;
+}
+h3.gradient {
+  background: linear-gradient(90deg, #21256b -2.72%, #5960dc 95.74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+}
+h4.averta {
+  font-family: "Averta-Black";
+  font-size: 32px;
+  line-height: 130%;
+  letter-spacing: 5px;
+
+  color: #454b5b;
+}
+p.p1 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 112%;
+  /* or 20px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+p.p1.averta {
+  font-family: "Averta-Bold";
+  font-size: 18px;
+  line-height: 112%;
+  /* or 20px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+p.p2.averta {
+  font-family: "Averta-Bold";
+  font-size: 16px;
+  line-height: 120%;
+  /* or 19px */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+p.p2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 112%;
+  /* or 18px */
+
+  letter-spacing: 4px;
+}
+p.subtitle {
+  color: #ed3237;
+  text-transform: uppercase;
+}
+p.p3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 150%;
+  /* or 21px */
+
+  color: #5c6476;
+}

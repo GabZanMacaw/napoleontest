@@ -1,0 +1,62 @@
+.subtitle {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 112%;
+	letter-spacing: 4px;
+	color: #ed3237;
+	margin-bottom: 0;
+
+	@media (max-width: 961px) {
+		text-align: center;
+		font-size: 12px;
+	}
+}
+
+.title {
+	font-family: "Averta-Black";
+	font-size: 40px;
+	line-height: 130%;
+	letter-spacing: 5px;
+
+	background: linear-gradient(90deg, #21256b -2.72%, #5960dc 95.74%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	margin-top: 0;
+	max-width: 637px;
+
+	@media (max-width: 961px) {
+		text-align: center;
+		font-size: 32px;
+	}
+}
+
+.black {
+	font-family: "Averta-Black";
+	font-size: 32px;
+	line-height: 130%;
+	letter-spacing: 5px;
+	color: #454b5b;
+	max-width: 499px;
+}
+
+.white {
+	font-family: "Averta-Black";
+	font-size: 32px;
+	line-height: 130%;
+	letter-spacing: 5px;
+	color: #ffffff;
+	max-width: 238px;
+	margin-top: 0;
+
+	@media only screen and (max-width: 1216px) {
+		max-width: 100%;
+		text-align: center;
+	}
+}
+
+.left {
+	text-align: left;
+}

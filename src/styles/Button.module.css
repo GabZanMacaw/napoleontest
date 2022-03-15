@@ -1,0 +1,2 @@
+.button{width:311.14px;height:56px;background:#ed3237;border-radius:7px;font-family:"Averta-Bold";font-size:16px;line-height:120%;text-align:center;color:#ffffff;text-transform:uppercase;cursor:pointer}.button:hover{transition:all 0.3s;background:linear-gradient(90deg, #a6191c -8.25%, #ed3237 104.66%);box-shadow:-1px 1px 20px #ed3237}.button:disabled{opacity:0.6;cursor:not-allowed}@media (max-width: 541px){.button{width:193px;height:48px;font-size:12px}}.secondary{width:254.42px}
+/*# sourceMappingURL=Button.module.css.map */
