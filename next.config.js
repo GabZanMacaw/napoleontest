@@ -1,4 +1,5 @@
 const withPWA = require("next-pwa");
+const isProd = process.env.NODE_ENV === "production";
 
 module.exports = withPWA({
   pwa: {
@@ -8,6 +9,7 @@ module.exports = withPWA({
     //domains: ["localhost"],
     domains: ["res.cloudinary.com"],
   },
+  assetPrefix: isProd ? "/napoleontest/" : "",
 });
 
 // module.exports = {
