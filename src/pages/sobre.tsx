@@ -1,7 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
 import { Parallax } from "react-scroll-parallax";
-import Skeleton from "react-loading-skeleton";
 import { NextSeo } from "next-seo";
 import { useRouter, withRouter } from "next/router";
 
@@ -13,10 +11,6 @@ import Button from "components/Button";
 import Title from "components/Title";
 import Footer from "components/Footer";
 import MainIntern from "components/MainIntern";
-
-import DiffImg from "assets/img/diff.png";
-import DiffMobileImg from "assets/img/diff_mobile.png";
-import FlechasVermelhaImg from "assets/svg/diff/diff-arrows.svg";
 
 import {
   getSeoForPage,
@@ -34,9 +28,6 @@ export default function Sobre({
   segments,
 }: any) {
   const router = useRouter();
-  const styling = {
-    backgroundImage: DiffImg,
-  };
 
   return (
     <>
@@ -152,10 +143,9 @@ export default function Sobre({
           <section>
             <div className={`${styles_diff.diff} ${styles.diff}`}>
               <div className={styles_diff.diff_image_mob}>
-                <Image
-                  src={DiffMobileImg}
-                  width={DiffMobileImg.width}
-                  height={DiffMobileImg.height}
+                <img
+                  style={{objectFit: "none"}}
+                  src="/assets/img/diff.png"
                   alt="Nossos Diferenciais"
                 />
               </div>
@@ -173,7 +163,7 @@ export default function Sobre({
                       key={i}
                     >
                       <div className={styles_diff.image}>
-                        <Image
+                        <img
                           src={imageUrl}
                           width="100%"
                           height="100%"
@@ -196,10 +186,9 @@ export default function Sobre({
               </div>
               <div className={styles_diff.diff_image}>
                 <Parallax y={[40, -20]} tagOuter="figure">
-                  <Image
-                    src={DiffImg}
-                    width={DiffImg.width}
-                    height={DiffImg.height}
+                  <img
+                    style={{objectFit: "none"}}
+                    src="/assets/img/diff.png"
                     alt="Nossos Diferenciais"
                   />
                 </Parallax>
@@ -208,10 +197,9 @@ export default function Sobre({
                   y={[-80, 30]}
                   tagOuter="figure"
                 >
-                  <Image
-                    src={FlechasVermelhaImg}
-                    width={FlechasVermelhaImg.width}
-                    height={FlechasVermelhaImg.height}
+                  <img
+                    style={{objectFit: "none"}}
+                    src="/assets/svg/diff/diff-arrows.svg"
                     alt="Flecha vermelha apontando para baixo"
                   />
                 </Parallax>

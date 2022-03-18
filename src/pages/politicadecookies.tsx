@@ -1,13 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import { NextSeo } from "next-seo";
 
 import styles from "styles/Termos.module.scss";
 
-import CookiesImg from "assets/img/termos/cookies.png";
-
 import Header from "components/Header";
-import Title from "components/Title";
 import Footer from "components/Footer";
 import MainIntern from "components/MainIntern";
 
@@ -29,516 +24,119 @@ export default function TermoDeUso({ settings, segments }: any) {
         <MainIntern title={"Política de Cookies"} fundo="sobre" />
 
         <div className={styles.termos}>
-          <p style={{ textAlign: "center" }}>
-            <strong>Conhecendo a </strong>
-            <strong>
-              <em>Pol&#237;tica de Cookies</em>
-            </strong>
-            <strong> da NAPOLEON</strong>
-          </p>
+          <p style={{ textAlign: "center" }}><b>Conhecendo a nossa <i>Política de Cookies</i></b></p>
+          <p style={{ textAlign: "center" }}><b>NAPOLEON</b></p>
+
+          <br />
+          <p><b>Referências gerais e dados de contato LGPD</b></p>
+          <br />
           <p>
-            <strong>Algumas refer&#234;ncias gerais</strong>
+            Data da última atualização: <b>22 de novembro de 2021</b>
+            <b><i>Canal de Comunicação do Usuário:</i></b> <a href="mailto:lgpd@napoleon.com.br">lgpd@napoleon.com.br</a>
+            Encarregado de Proteção Privacidade e Dados Pessoais: <b>Luiz Fernando Del Rio Horn</b>
+            <b><i>Canal de Comunicação com o Encarregado:</i></b> <a href="mailto:encarregado@actatechlaw.com.br">encarregado@actatechlaw.com.br</a>
           </p>
-          <p>
-            Data da &#250;ltima atualiza&#231;&#227;o:{" "}
-            <strong>19 de julho de 2021</strong>
-          </p>
-          <p>
-            <strong>
-              <em>Canal de Comunica&#231;&#227;o do Usu&#225;rio</em>:{" "}
-            </strong>
-            <a href="mailto:lgpd@napoleonabrasivos.com.br">
-              lgpd@napoleonabrasivos.com.br
-            </a>
-          </p>
-          <p>
-            Encarregado da Prote&#231;&#227;o da Privacidade e dos Dados
-            Pessoais: <strong>Luiz Fernando Del Rio Horn</strong>
-          </p>
-          <p>
-            <strong>
-              <em>Canal de Comunica&#231;&#227;o com o Encarregado:</em>
-            </strong>
-            <a href="mailto:encarregado@actatechlaw.com.br">
-              encarregado@actatechlaw.com.br
-            </a>
-            <u></u>
-          </p>
-          <p>
-            <strong>
-              Declara&#231;&#227;o de Compromisso com a Privacidade e a
-              Prote&#231;&#227;o dos Dados Pessoais
-            </strong>
-          </p>
-          <p>
-            A <strong>NAPOLEON</strong> deseja a voc&#234;, nosso colaborador,
-            representante, parceiro, cliente, consumidor ou visitante, uma
-            &#243;tima experi&#234;ncia de contato com nossos canais de
-            comunica&#231;&#227;o, produtos ou servi&#231;os, sempre baseada na
-            percep&#231;&#227;o de respeito, transpar&#234;ncia, autonomia,
-            seguran&#231;a, satisfa&#231;&#227;o e alegria. Nossas
-            a&#231;&#245;es sempre ir&#227;o priorizar o resguardo da sua
-            privacidade em todas as etapas da rela&#231;&#227;o, n&#227;o
-            importando os tipos de meios, marcas, produtos e servi&#231;os por
-            n&#243;s disponibilizados. Sempre iremos considerar os seus dados
-            pessoais, identificados ou identific&#225;veis, como uma prioridade
-            a ser resguardada na nossa organiza&#231;&#227;o.
-          </p>
-          <p>
-            Estes s&#227;o os valores condizentes com a nossa
-            <strong>
-              <em>
-                Pol&#237;tica de Privacidade e de Prote&#231;&#227;o de Dados
-                Pessoais
-              </em>
-            </strong>
-            , a qual se alinha &#224;s mais relevantes leis informacionais pelo
-            mundo, sentimos muito orgulho e convidamos que a conhe&#231;a. Em
-            igual medida, disponibilizamos para voc&#234;, nosso usu&#225;rio, o
-            <strong>
-              <em>Termo de Uso do Website</em>
-            </strong>
-            , a{" "}
-            <strong>
-              <em>Pol&#237;tica de Cordialidade</em>
-            </strong>{" "}
-            e a
-            <strong>
-              <em>
-                Pol&#237;tica das Tecnologias e Publicidade de Rastreamento
-                On-line
-              </em>
-            </strong>
-            .
-          </p>
-          <p>
-            A nossa{" "}
-            <strong>
-              <em>Pol&#237;tica de Cookies</em>
-            </strong>{" "}
-            obedece a esses crit&#233;rios maiores, integrando esse documento
-            que se ocupa das informa&#231;&#245;es relativas ao tratamento de
-            dados pessoais, inclusive no tocante aos seus direitos. Recomendamos
-            a voc&#234;, titular de dados pessoais, que conhe&#231;a, mais
-            abaixo, os termos adotados quando se trata da utiliza&#231;&#227;o
-            de <em>cookies</em> pelo nosso <em>Website</em>, de modo a permitir
-            o
-            <strong>
-              gerenciamento de suas pr&#243;prias configura&#231;&#245;es,
-              personalizando a sua experi&#234;ncia e garantindo seus direitos.
-            </strong>
-          </p>
-          <p>
-            <strong>Estrutura e conte&#250;do da </strong>
-            <strong>
-              <em>Pol&#237;tica de Cookies</em>
-            </strong>
-          </p>
-          <p>
-            Para facilitar sua compreens&#227;o, dividimos este documento em{" "}
-            <strong>quatro partes</strong>. Entenda como bem aproveit&#225;-lo
-            na sua leitura integral e, depois, como fazer a
-            localiza&#231;&#227;o r&#225;pida das partes de destaque:
-          </p>
-          <p>
-            &#9679; <strong>Parte 1:</strong> indica&#231;&#227;o dos
-            procedimentos da <strong>NAPOLEON</strong> quando o assunto s&#227;o{" "}
-            <em>cookies</em>, ou seja, para que utilizamos os <em>cookies</em>{" "}
-            no nosso <em>Website</em>, plataforma, aplicativos e servi&#231;os
-            atrelados;
-          </p>
-          <p>
-            &#9679; <strong>Parte 2: </strong>indica&#231;&#227;o das suas
-            op&#231;&#245;es de gerenciamento dos <em>cookies</em>, com destaque
-            para a op&#231;&#227;o <em>opt-out</em>, ou seja, a op&#231;&#227;o
-            de desativar <em>cookies</em>;<strong></strong>
-          </p>
-          <p>
-            &#9679; <strong>Parte 3:</strong> descri&#231;&#227;o detalhada dos{" "}
-            <em>cookies</em> e seu funcionamento por categorias, ou seja, o que
-            s&#227;o e como funcionam;
-          </p>
-          <p>
-            &#9679; <strong>Parte 4: </strong>listagem dos diversos tipos de{" "}
-            <em>cookies</em> utilizados por n&#243;s e suas finalidades,
-            ent&#227;o apontados no{" "}
-            <strong>
-              <em>Diret&#243;rio de Cookies</em>
-            </strong>
-            . <strong></strong>
-          </p>
-          <p>
-            <strong>
-              Parte 1: Para que utilizamos os <em>cookies</em> vinculados no{" "}
-              <em>Website, </em>plataforma, aplicativos e servi&#231;os
-              vinculados?
-            </strong>
-          </p>
-          <p>
-            Saiba que as informa&#231;&#245;es colhidas e contidas nos nossos{" "}
-            <em>cookies</em> s&#227;o utilizadas com o objetivo maior de
-            melhorar os servi&#231;os de navega&#231;&#227;o e de
-            relacionamento. Leia, abaixo, uma descri&#231;&#227;o mais detalhada
-            dos nossos principais objetivos com o uso de <em>cookies</em>:
-          </p>
-          <p>
-            &#9679; permitir que um servi&#231;o reconhe&#231;a seu dispositivo
-            numa pr&#243;xima visita;
-          </p>
-          <p>
-            &#9679; para que voc&#234; n&#227;o precise fornecer as mesmas
-            informa&#231;&#245;es v&#225;rias vezes ao realizar uma tarefa
-            durante uma sess&#227;o, seja no preenchimento de um formul&#225;rio
-            ou de uma pesquisa <em>on</em>-<em>line</em>;
-          </p>
-          <p>
-            &#9679; conferir suporte &#224; funcionalidade &#224;
-            navega&#231;&#227;o personalizada;
-          </p>
-          <p>
-            &#9679; permitir que o reprodutor de v&#237;deo funcione
-            adequadamente medindo quantas pessoas est&#227;o utilizando os
-            servi&#231;os, de modo que a utiliza&#231;&#227;o de tais
-            servi&#231;os seja facilitada e garantindo que haja capacidade
-            suficiente para manter sua agilidade;
-          </p>
-          <p>
-            &#9679; analisando dados an&#244;nimos para nos ajudar a compreender
-            como as pessoas interagem com os diferentes aspectos de nossos
-            servi&#231;os <em>on-line</em> com vistas ao seu aprimoramento;
-          </p>
-          <p>
-            &#9679; gerar uma melhoria na forma de divulga&#231;&#227;o de
-            nossos produtos e servi&#231;os visando a objetividade,
-            transpar&#234;ncia e dinamismo;
-          </p>
-          <p>
-            &#9679; possibilitar a melhoria nos nossos produtos e servi&#231;os
-            em seu favor.
-          </p>
-          <p>
-            <strong>
-              Parte 2: Gerenciando seus <em>cookies</em>!
-            </strong>
-          </p>
-          <p>
-            Para que se consiga a total transpar&#234;ncia nos nossos
-            procedimentos, utilizamos{" "}
-            <strong>
-              <em>Banner</em>
-            </strong>{" "}
-            flutuante, consistindo naquela <em>janelinha</em> destacada dentro
-            do nosso <em>Website</em>, com o objetivo de precisar sua
-            utiliza&#231;&#227;o e finalidade, sendo um instrumento de
-            gerenciamento da experi&#234;ncia de navega&#231;&#227;o no nosso{" "}
-            <em>Website</em>. Com o{" "}
-            <strong>
-              <em>Banner</em>
-            </strong>{" "}
-            flutuante consegue-se transpar&#234;ncia e objetividade, sem
-            complica&#231;&#227;o, de maneira a acionar ou desativar as
-            ferramentas.
-          </p>
-          <p>
-            <Image
-              src={CookiesImg}
-              width={CookiesImg.width}
-              height={CookiesImg.height}
-              alt="Cookies"
-            />
-          </p>
-          <p>
-            Em quaisquer casos de d&#250;vidas, erros, sugest&#245;es ou
-            problemas de utiliza&#231;&#227;o da plataforma concernentes ao
-            emprego de<em>cookies e </em>das{" "}
-            <em>tecnologias de publicidade e rastreamento on-line</em>, pedimos
-            para contatar o{" "}
-            <em>Canal de Comunica&#231;&#227;o do Usu&#225;rio</em> por meio do
-            <a href="mailto:lgpd@napoleonabrasivos.com.br">
-              lgpd@napoleonabrasivos.com.br
-            </a>
-            ou, como &#250;ltima inst&#226;ncia, utilizar o
-            <em>
-              Canal de Comunica&#231;&#227;o com o Encarregado da
-              Prote&#231;&#227;o da Privacidade e dos Dados Pessoais
-            </em>
-            , por meio do
-            <a href="mailto:encarregado@actatechlaw.com.br">
-              encarregado@actatechlaw.com.br
-            </a>
-            .
-          </p>
-          <p>
-            Independente desse gerenciamento das pr&#243;prias
-            configura&#231;&#245;es presentes no nosso <em>Website</em>, o
-            titular de dados pessoas pode, a qualquer momento, mesmo depois de
-            autorizado o uso de <em>cookies</em> por meio do{" "}
-            <strong>
-              <em>Banner</em>
-            </strong>{" "}
-            flutuante, decidir ser notificado sobre a recep&#231;&#227;o de
-            cookies, bem como bloquear a respectiva entrada no seu sistema por
-            meio da desativa&#231;&#227;o de parte ou da totalidade dos nossos{" "}
-            <em>cookies</em>.
-          </p>
-          <p>
-            A maioria dos navegadores de internet (<em>browser</em>) permite que
-            voc&#234; escolha se aceita os <em>cookies</em>. A maioria
-            tamb&#233;m permite eliminar os <em>cookies</em> j&#225; definidos.
-            As op&#231;&#245;es dispon&#237;veis e o mecanismo usado variam de
-            navegador para navegador. Essas configura&#231;&#245;es do navegador
-            s&#227;o normalmente encontradas no menu
-            &quot;op&#231;&#245;es&quot;, &quot;ferramentas&quot; ou
-            &quot;prefer&#234;ncias&quot;. Voc&#234; tamb&#233;m poder&#225;
-            consultar o menu &quot;ajuda&quot; do navegador.
-          </p>
-          <p>
-            Nos pr&#243;prios <em>browsers</em> (tamb&#233;m conhecido como
-            navegador, correspondendo a um programa criado para permitir a
-            navega&#231;&#227;o pela internet) &#233; poss&#237;vel ao titular
-            de dados pessoais aceitar, recusar ou apagar <em>cookies </em>(com
-            exce&#231;&#227;o, normalmente, dos <em>cookies flash</em>),
-            utilizando comandos de configura&#231;&#227;o do seu{" "}
-            <em>browser</em>. Muito embora, alerta-se que a recusa de{" "}
-            <em>cookies</em> pode vir a prejudicar a navega&#231;&#227;o, com
-            comprometimento de certos servi&#231;os, &#225;reas do{" "}
-            <em>Website</em> ou n&#227;o envio de informa&#231;&#245;es de sua
-            prefer&#234;ncia. Por isso, fique atento: lembre-se sempre que ao
-            desativar cookies, partes do nosso <em>Website</em> podem n&#227;o
-            funcionar corretamente. Caso a elimina&#231;&#227;o seja ap&#243;s a
-            sa&#237;da do W<em>ebsite</em>, tenha em mente que todas as
-            defini&#231;&#245;es e prefer&#234;ncias controladas por aqueles{" "}
-            <em>cookies</em> ser&#227;o descartadas e necessitar&#227;o serem
-            recriadas quando do retorno ao <em>Website</em>.
-          </p>
-          <p>
-            <strong>
-              Parte 3: O que s&#227;o e como funcionam os cookies?
-            </strong>
-          </p>
-          <p>
-            <em>Cookies</em>
-            s&#227;o pequenas unidades de dados temporariamente armazenadas no
-            disco r&#237;gido do seu computador ou do seu dispositivo m&#243;vel
-            pelo navegador de internet (<em>browser</em>), necess&#225;rias para
-            navegar no nosso <em>Website</em>. Os <em>cookies</em> s&#227;o
-            usados para determinar a utilidade, interesse e o n&#250;mero de
-            acesso ao <em>Website</em>, permitindo uma navega&#231;&#227;o de
-            maior qualidade (r&#225;pida e eficiente).
-          </p>
-          <p>
-            Um <em>cookie</em> geralmente inclui um identificador exclusivo, que
-            &#233; um n&#250;mero an&#244;nimo (gerado aleatoriamente)
-            armazenado em seu dispositivo. Alguns expiram no final da
-            sess&#227;o do seu <em>website</em>, outros permanecem no seu
-            computador por mais tempo.
-          </p>
-          <p>
-            Nem todos os dados (informa&#231;&#245;es) que os <em>cookies</em>{" "}
-            carregam s&#227;o pessoais. Afinal, dado pessoal &#233; considerado
-            toda informa&#231;&#227;o relacionada &#224; pessoa f&#237;sica ou
-            natural identificada ou identific&#225;vel. Por&#233;m, sendo dado
-            pessoal, seu tempo de manuten&#231;&#227;o ligado a um{" "}
-            <em>cookie</em> regula-se pelo crit&#233;rio de necessidade, isto
-            &#233;, pode ser mantido apenas pelo tempo necess&#225;rio para
-            cumprir a sua leg&#237;tima finalidade.
-          </p>
-          <p>
-            Existem duas categorias gerais de <em>cookies</em>:
-          </p>
-          <p>
-            &#9679;{" "}
-            <strong>
-              <em>Cookies</em> de origem:
-            </strong>{" "}
-            s&#227;o<em>cookies</em> gerados pelo pr&#243;prio dom&#237;nio,
-            isto &#233;, pelo<em>website</em> que voc&#234; visita, dos quais
-            nos responsabilizamos. Os <em>cookies</em> de origem s&#227;o
-            definidos pelo <em>website</em> que voc&#234; est&#225; acessando e
-            podem ser lidos somente por aquele website;
-          </p>
-          <p>
-            &#9679;{" "}
-            <strong>
-              <em>Cookies</em> de terceiros:
-            </strong>{" "}
-            s&#227;o <em>cookies</em> gerados por terceiros, originados de fonte
-            externa ao dom&#237;nio. Os <em>cookies</em> de terceiros s&#227;o
-            definidos por outras organiza&#231;&#245;es que n&#243;s utilizamos
-            para diferentes servi&#231;os, sendo geralmente utilizados para
-            medir o sucesso de aplica&#231;&#245;es e a efic&#225;cia da
-            publicidade de terceiros nos <em>websites</em>. &#201; o caso, por
-            exemplo, de servi&#231;os anal&#237;ticos externos de fornecedores
-            que definem <em>cookies</em> de nosso interesse, a fim de relatar o
-            que &#233; visualizado e o que n&#227;o &#233;. O <em>website</em>{" "}
-            que voc&#234; est&#225; acessando tamb&#233;m pode ter conte&#250;do
-            integrado ao YouTube, por exemplo, e esses <em>websites</em> podem
-            definir seus pr&#243;prios <em>cookies</em>.
-          </p>
-          <p>
-            Os cookies tamb&#233;m podem ser classificados pelas diferentes
-            fun&#231;&#245;es que assumem:
-          </p>
-          <p>
-            &#9679;{" "}
-            <strong>
-              <em>Cookies</em> essenciais ou necess&#225;rios:
-            </strong>
-            alguns <em>cookies</em> s&#227;o essenciais para acessar a
-            &#225;reas espec&#237;ficas do nosso <em>website</em>. Permitem a
-            navega&#231;&#227;o e a utiliza&#231;&#227;o das suas
-            aplica&#231;&#245;es, tal como acessar &#225;reas seguras por meio
-            de <em>login</em>. Sem estes <em>cookies</em>, os servi&#231;os que
-            o exijam n&#227;o podem ser prestados, como no caso dos cestos de
-            compras ou fatura eletr&#244;nica;
-          </p>
-          <p>
-            &#9679;{" "}
-            <strong>
-              <em>Cookies</em> anal&#237;ticos ou de desempenho:
-            </strong>
-            utilizamos estes <em>cookies</em> para analisar a forma como os
-            usu&#225;rios usam o <em>website</em> e monitorar a sua performance.
-            Isto permite-nos fornecer uma experi&#234;ncia de alta qualidade ao
-            personalizar a nossa oferta e rapidamente identificar e corrigir
-            quaisquer problemas que surjam. Por exemplo, usamos <em>cookies</em>{" "}
-            de desempenho para saber quais as p&#225;ginas mais acessadas; qual
-            o m&#233;todo de liga&#231;&#227;o entre p&#225;ginas que &#233;
-            mais eficaz; para determinar a raz&#227;o de algumas p&#225;ginas
-            receberem mensagens de erro; para destacar artigos ou servi&#231;os
-            do <em>website</em> que pensamos ser do interesse dos usu&#225;rios.
-            Estes cookies s&#227;o utilizados apenas para efeitos de
-            cria&#231;&#227;o e an&#225;lise estat&#237;stica, sem nunca
-            recolher informa&#231;&#227;o de car&#225;ter pessoal;
-          </p>
-          <p>
-            &#9679;{" "}
-            <strong>
-              <em>Cookies</em> de funcionalidade:
-            </strong>{" "}
-            utilizamos <em>cookies</em> de funcionalidade para nos permitir
-            relembrar as prefer&#234;ncias do usu&#225;rio relativamente &#224;
-            utiliza&#231;&#227;o do <em>website</em>, de forma que n&#227;o seja
-            necess&#225;rio voltar a configurar a p&#225;gina toda vez que a
-            visita. Os <em>cookies</em>, nessa fun&#231;&#227;o, evitam digitar
-            o nome do utilizador cada vez que este acede ao <em>website;</em>{" "}
-            permitem fornecer servi&#231;os avan&#231;ados ao usu&#225;rio, como
-            no caso de coment&#225;rios a um artigo;
-          </p>
-          <p>
-            &#9679;
-            <strong>
-              <em>Cookies</em>
-              de publicidade ou direcionados ou segmenta&#231;&#227;o:
-            </strong>
-            servem para direcionar a publicidade em fun&#231;&#227;o dos
-            interesses de cada usu&#225;rio e do n&#250;mero de visitas que
-            realizou, permitindo limitar o n&#250;mero de vezes da
-            exibi&#231;&#227;o do an&#250;ncio ou a medir a efic&#225;cia da
-            publicidade;
-          </p>
-          <p>
-            &#9679;{" "}
-            <strong>
-              <em>Cookies</em> de m&#237;dia social:{" "}
-            </strong>
-            facilitam o compartilhamento em redes sociais, fornecem ferramentas
-            para que voc&#234; se conecte ao nosso <em>website</em> e nos ajudam
-            a entender melhor tanto o p&#250;blico-alvo como a efic&#225;cia de
-            nossa divulga&#231;&#227;o nas m&#237;dias sociais. Estes s&#227;o{" "}
-            <em>cookies</em> de terceiros. Suas escolhas em rela&#231;&#227;o a
-            esses <em>cookies</em> s&#227;o determinadas pelas plataformas de
-            m&#237;dia social nas quais voc&#234; possui conta.<strong></strong>
-          </p>
-          <p>
-            Quanto aos tipos, os <em>cookies</em> podem ser:
-          </p>
-          <p>
-            &#9679;{" "}
-            <strong>
-              <em>Cookies</em> permanentes ou persistentes:
-            </strong>
-            ficam armazenados no navegador de internet (<em>browser</em>) nos
-            seus dispositivos de acesso (<em>desktop</em>, <em>mobile</em> ou{" "}
-            <em>tablet</em>) e s&#227;o utilizados sempre que o usu&#225;rio faz
-            uma nova visita ao <em>website</em>. Geralmente s&#227;o utilizados
-            para direcionar a navega&#231;&#227;o de acordo com os interesses do
-            usu&#225;rio, permitindo-nos prestar um servi&#231;o mais
-            personalizado;
-          </p>
-          <p>
-            &#9679;{" "}
-            <strong>
-              <em>Cookies</em> de sess&#227;o:
-            </strong>{" "}
-            s&#227;o tempor&#225;rios, expirando automaticamente quando fechado
-            o navegador. A informa&#231;&#227;o obtida permite identificar
-            problemas, com melhor experi&#234;ncia de navega&#231;&#227;o.
-          </p>
-          <p>
-            <strong>
-              Parte 4: saiba quais s&#227;o os nossos <em>cookies</em>{" "}
-              utilizados no <em>Diret&#243;rio de Cookies</em>!
-            </strong>
-          </p>
-          <p>
-            Al&#233;m dos <em>cookies</em> abaixo arrolados, nosso{" "}
-            <em>Website</em>
-            poder&#225; eventualmente utilizar outros cookies de categorias,
-            fun&#231;&#245;es e tipos diferentes.
-          </p>
-          <p>Nome do cookie: PHPSESSID</p>
-          <p>Dura&#231;&#227;o de armazenamento: sess&#227;o</p>
-          <p>Objetivo: identificador para sess&#227;o em PHP.</p>
-          <p>Fornecedor: Linux</p>
-          <p>Categoria: Necess&#225;rio</p>
-          <p>Nome do cookie: _fbp</p>
-          <p>Dura&#231;&#227;o de armazenamento: 2 meses</p>
-          <p>
-            Objetivo: Esse cookie &#233; definido pelo Facebook para entregar
-            an&#250;ncios quando eles est&#227;o no pr&#243;prio Facebook ou em
-            plataformas digitais alimentadas por an&#250;ncios do Facebook
-            ap&#243;s a visita a esse website
-          </p>
-          <p>Fornecedor: Facebook</p>
-          <p>Categoria: Publicidade</p>
-          <p>Nome do cookie: _ga</p>
-          <p>Dura&#231;&#227;o de armazenamento: 2 anos</p>
-          <p>
-            Objetivo: Esse cookie &#233; instalado pelo Google Analytics. &#201;
-            usado para calcular os visitantes, as sess&#245;es, os dados de
-            campanhas e acompanhar o uso do site para o relat&#243;rio de dados
-            anal&#237;ticos do website. Os cookies armazenam
-            informa&#231;&#245;es de forma an&#244;nima e atribuem um
-            n&#250;mero gerado aleatoriamente para identificar visitantes
-            &#250;nicos.
-          </p>
-          <p>Fornecedor: Google</p>
-          <p>Categoria: An&#225;lise</p>
-          <p>Nome do cookie: _gat_gtag_UA_121393597_1</p>
-          <p>Dura&#231;&#227;o de armazenamento: 1 minuto</p>
-          <p>
-            Objetivo: Esse &#233; um tipo de cookie de padr&#227;o definido pelo
-            Google Analytics, onde o elemento de padr&#227;o no nome cont&#233;m
-            o n&#250;mero de identidade exclusivo da conta ou website ao qual
-            est&#225; relacionado. Varia&#231;&#227;o do cookie _gat que &#233;
-            usado para limitar a quantidade de dados registrados pelo Google em
-            websites de alto volume de tr&#225;fego.
-          </p>
-          <p>Fornecedor: Google</p>
-          <p>Categoria: An&#225;lise</p>
-          <p>Nome do cookie: _gid</p>
-          <p>Dura&#231;&#227;o de armazenamento: 24 horas</p>
-          <p>
-            Objetivo: Esse cookie &#233; instalado pelo Google Analytics. &#201;
-            usado para armazenar informa&#231;&#245;es sobre como os visitantes
-            usam o website e ajuda na cria&#231;&#227;o de um relat&#243;rio de
-            dados anal&#237;ticos sobre como o website est&#225; performando. Os
-            dados, incluindo n&#250;mero de visitantes, sua origem e as
-            p&#225;ginas visitadas, s&#227;o mantidos de forma anonimizada.
-          </p>
-          <p>Fornecedor: Google</p>
-          <p>Categoria: An&#225;lise</p>
+
+          <br />
+          <p><b>Declaração de Compromisso com a Privacidade e com a Proteção dos Dados Pessoais</b></p>
+          <br />
+          <p>A <b>NAPOLEON</b> deseja a você, nosso usuário, uma ótima experiência de contato com nossos canais de comunicação, produtos ou serviços, sempre baseada na percepção de respeito, transparência, autonomia, segurança, satisfação e alegria. Nossas ações sempre irão priorizar o resguardo da sua privacidade em todas as etapas da relação, não importando os tipos de meios, marcas, produtos e serviços por nós disponibilizados. Sempre iremos considerar os seus dados pessoais, identificados ou identificáveis, como uma prioridade a ser resguardada na nossa organização.</p>
+          <p>Estes são os valores condizentes com a nossa <b><i>Política de Privacidade</i></b>, a qual se alinha às mais relevantes leis informacionais pelo mundo, da qual sentimos muito orgulho e convidamos que a conheça, condição para permanecer navegando no nosso <i>website</i> face as atividades de tratamento de dados pessoais envolvidas. Em igual medida, disponibilizamos para você, nosso usuário, o <b><i>Termo de Uso do Website</i></b> e a <b><i>Política de Cordialidade</i></b> e a <b><i>Política de E-commerce</i></b>.</p>
+          <p>A nossa <b><i>Política de Cookies</i></b> obedece a esses critérios maiores, integrando esse documento que se ocupa das informações relativas ao tratamento de dados pessoais, inclusive no tocante aos seus direitos. Recomendamos a você, titular de dados pessoais, que conheça, mais abaixo, os termos adotados quando se trata da utilização de <i>cookies</i> e de outras <i>tecnologias</i> pelo nosso <i>website</i>, de modo a conhecer o <b>gerenciamento de algumas configurações, personalizando a sua experiência e garantindo seus direitos.</b></p>
+
+          <br />
+          <p><b>Estrutura e conteúdo da <i>Política de Cookies</i></b></p>
+          <br />
+          <p>Para facilitar sua compreensão, dividimos este documento em <b>seis partes</b>. Entenda bem como aproveitá-lo na sua leitura integral e, depois, como fazer a localização rápida das partes de destaque:</p>
+          <div>
+            <p><b>●	Parte 1:</b> descrição dos <i>cookies</i> e suas funcionalidades (o que são e como funcionam);</p>
+            <p><b>●	Parte 2:</b> descrição das tecnologias de rastreamento <i>on-line</i> e suas funcionalidades (o que são e como funcionam);</p>
+            <p><b>●	Parte 3:</b> procedimentos quando o assunto são <i>cookies</i> e outras tecnologias em nosso <i>website</i>, plataforma, aplicativos e serviços atrelados;</p>
+            <p><b>●	Parte 4:</b> opções de gerenciamento dos <i>cookies</i>, com ênfase na desativação dos <i>cookies</i> (opção <i>opt-out</i>);</p>
+            <p><b>●	Parte 5:</b> demais documentos legais.</p>
+          </div>
+
+          <br />
+          <p><b>Parte 1: O que são e como funcionam os cookies?</b></p>
+          <br />
+          <p><i>Cookies</i> são pequenas unidades de dados temporariamente armazenadas no disco rígido do seu computador ou do seu dispositivo móvel pelo navegador de internet (<i>browser</i>), necessárias para navegar no nosso <i>website</i>. Os <i>cookies</i> são usados para determinar a utilidade, interesse e o número de acesso ao <i>website</i>, permitindo uma navegação de maior qualidade (rápida e eficiente).</p>
+          <p>Um <i>cookie</i> geralmente inclui um identificador exclusivo, que é um número anônimo (gerado aleatoriamente) armazenado em seu dispositivo. Alguns expiram no final da sessão do seu <i>website</i>, outros permanecem no seu computador por mais tempo.</p>
+          <p>Nem todos os dados (informações) que os <i>cookies</i> carregam são pessoais. Afinal, dado pessoal é considerado toda informação relacionada à pessoa física ou natural identificada ou identificável. Porém, sendo dado pessoal, seu tempo de manutenção ligado a um <i>cookie</i> regula-se pelo critério de necessidade, isto é, pode ser mantido apenas pelo tempo necessário para cumprir a sua legítima finalidade.</p>
+          <p><i>Cookies</i> não armazenam informações pessoais sem que você as tenha fornecido e não coletam informações registradas em seu computador. A maioria dos <i>browsers</i> possibilita ao usuário, a qualquer instante, ativar mecanismos para informá-lo quando os <i>cookies</i> estiverem acionados ou para evitar que sejam acionados, embora isso possa afetar a utilização de algumas funções de nosso <i>website</i>.</p>
+          <p>Assim como acontece na maioria dos serviços da internet, coletamos algumas informações automaticamente e as armazenamos em arquivos de <i>log</i>. Essas informações incluem endereços do Protocolo da Internet (IP), tipo de navegador e idioma, provedor de internet, <i>websites</i> e aplicativos de encaminhamento e saída, sistema operacional, marcação de data/hora e dados de sequência de cliques (<i>clickstream</i>). Usamos essas informações para entender e analisar tendências, administrar o <i>website</i>, aprender sobre seu comportamento no nosso <i>website</i>, melhorar nossos produtos e serviços e coletar informações demográficas sobre nossa base de usuários como um todo.</p>
+          <p>Os <i>cookies</i>, em termos de funcionalidade, não são perigosos. <i>Cookies</i> são pequenos pedaços de texto. Eles não são programas de computador e não podem ser executados como código. Além disso, eles não podem ser usados para disseminar vírus e as versões atuais de alguns navegadores permitem que os usuários definam suas próprias limitações quanto ao número de <i>cookies</i> salvos em seus discos rígidos.</p>
+          <p>Os <i>cookies</i> são armazenados no disco rígido do computador, mas não acessam o disco rígido. Portanto, um <i>cookie</i> não pode ler outras informações salvas no disco rígido ou obter o endereço de e-mail do usuário, etc. Eles apenas contêm e transferem para o servidor as informações que os próprios usuários divulgaram em um determinado <i>website</i>.</p>
+          <p>Um servidor não pode definir um <i>cookie</i> para um domínio do qual não seja membro. Apesar disso, os usuários muitas vezes encontram em seus arquivos de computador <i>cookies</i> de <i>websites</i> que nunca visitaram. Esses <i>cookies</i> são geralmente aplicados por organizações que comercializam publicidade na internet em nome de outros <i>websites</i>, repassando informações dos usuários para terceiros sem o conhecimento ou consentimento dos usuários, como informações sobre hábitos de navegação, <b>consistindo numa prática desleal e ilegal da qual não pactuamos</b>. Esse é o motivo mais comum para as pessoas rejeitarem os <i>cookies</i>.</p>
+          <p>Existem duas categorias gerais de <i>cookies</i>:</p>
+          <div>
+            <p><b>●	<i>Cookies</i> de origem:</b> são <i>cookies</i> gerados pelo próprio domínio, isto é, pelo <i>website</i> que você visita, dos quais nos responsabilizamos. Os <i>cookies</i> de origem são definidos pelo <i>website</i> que você está acessando e podem ser lidos somente por aquele <i>website</i>;</p>
+            <p><b>●	<i>Cookies</i> de terceiros:</b> são <i>cookies</i> gerados por terceiros, originados de fonte externa ao domínio. Os <i>cookies</i> de terceiros são definidos por outras organizações que nós utilizamos para diferentes serviços, sendo geralmente utilizados para medir o sucesso de aplicações e a eficácia da publicidade de terceiros nos <i>websites</i>. É o caso, por exemplo, de serviços analíticos externos de fornecedores que definem <i>cookies</i> de nosso interesse, a fim de relatar o que é visualizado e o que não é. <i>Websites</i> que você acessa também podem ter conteúdo integrado ao YouTube, por exemplo, e esses <i>websites</i> podem definir seus próprios cookies.</p>
+          </div>
+          <p>Os <i>cookies</i> também podem ser classificados pelas diferentes funções que assumem:</p>
+          <div>
+            <p><b>●	<i>Cookies</i> essenciais ou necessários:</b> alguns <i>cookies</i> são essenciais para acessar a áreas específicas dos <i>websites</i>, permitindo a navegação e a utilização das suas aplicações, tal como acessar áreas seguras por meio de <i>login</i>. Sem estes <i>cookies</i>, os serviços que o exijam não podem ser prestados, como no caso dos cestos de compras ou fatura eletrônica;</p>
+            <p><b>●	<i>Cookies</i> analíticos ou de desempenho:</b> a utilização destes <i>cookies</i> se dá para analisar a forma como os usuários usam o <i>website</i> e monitorar a sua performance. Isso fornece uma experiência de alta qualidade ao personalizar a oferta e rapidamente identificar e corrigir quaisquer problemas que surjam. Por exemplo, usam-se <i>cookies</i> de desempenho para saber quais as páginas mais acessadas; qual o método de ligação entre páginas que é mais eficaz; para determinar a razão de algumas páginas receberem mensagens de erro; para destacar artigos ou serviços do <i>website</i> que se pensa ser do interesse dos usuários. Estes <i>cookies</i> são utilizados apenas para efeitos de criação e análise estatística, sem nunca recolher informação de caráter pessoal;</p>
+            <p><b>●	<i>Cookies</i> de funcionalidade:</b> utilizados para permitir relembrar as preferências do usuário relativamente à utilização do <i>website</i>, de forma que não seja necessário voltar a configurar a página toda vez que a visita. Os <i>cookies</i>, nessa função, evitam digitar o nome do usuário cada vez que este acede ao <i>website</i>; permitem fornecer serviços avançados, como no caso de comentários a um artigo;</p>
+            <p><b>●	<i>Cookies</i> de publicidade ou direcionados ou segmentação:</b> servem para direcionar a publicidade em função dos interesses de cada usuário e do número de visitas que realizou, permitindo limitar o número de vezes da exibição do anúncio ou a medir a eficácia da publicidade;</p>
+            <p><b>●	<i>Cookies</i> de mídia social:</b> facilitam o compartilhamento em redes sociais, fornecem ferramentas para que o usuário se conecte ao <i>website</i> e permita entender melhor tanto o público-alvo como a eficácia da divulgação nas mídias sociais. Estes são <i>cookies</i> de terceiros. Suas escolhas em relação a esses <i>cookies</i> são determinadas pelas plataformas de mídia social nas quais você possui conta.</p>
+          </div>
+          <p>Quanto aos tipos, os <i>cookies</i> podem ser:</p>
+          <div>
+            <p><b>●	<i>Cookies</i> permanentes ou persistentes:</b> ficam armazenados no navegador de internet (<i>browser</i>) nos seus dispositivos de acesso (<i>desktop</i>, <i>mobile</i> ou <i>tablet</i>) e são utilizados sempre que o usuário faz uma nova visita ao <i>website</i>. Geralmente são utilizados para direcionar a navegação de acordo com os interesses do usuário, permitindo prestar um serviço mais personalizado;</p>
+            <p><b>●	<i>Cookies</i> de sessão:</b> são <i>temporários</i>, expirando automaticamente quando fechado o navegador. A informação obtida permite identificar problemas, com melhor experiência de navegação.</p>
+          </div>
+
+          <br />
+          <p><b>Parte 2: O que são e como funcionam as outras tecnologias de rastreamento <i>on-line</i>?</b></p>
+          <br />
+          <p>Quando você visita um <i>website</i>, rastreadores (conhecidos por “tecnologia de rastreamento de terceiros”) são armazenados em seu computador. O proprietário ou responsável pelo <i>website</i> determina quantos e quais tipo de <i>tecnologias de rastreamento on-line</i> serão incluídos. Alguns <i>websites</i> podem ter até mais de sessenta rastreadores, enquanto outros podem apresentar apenas um ou até mesmo nenhum. A espécie mais comum de rastreador é o notório <i>cookie</i>, mas os rastreadores não se resumem a esse tipo.</p>
+          <p>Rastreadores conseguem coletar diversas informações sobre seu dispositivo, incluindo seu endereço Protocolo da Internet (IP), seus históricos de navegação, o tamanho da sua tela, o fuso-horário, <i>plug-ins</i> e sistema operacional. A combinação de todos esses elementos gera uma espécie de <i>impressão digital</i> de navegação.</p>
+          <p>Nem todos os rastreadores estão necessariamente ligados a empreendimentos que apuram hábitos de navegação. Alguns são utilizados tão somente para que um website aponte o número de acesso de usuários e suas origens. Alguns são realmente necessários para fazer o <i>website</i> funcionar adequadamente. Entretanto, via de regra, a aceitação de <i>cookies</i> implica concordância no recebimento de todos os rastreadores deste <i>website</i>, incluindo aqueles que passam informações gerais para empresas.</p>
+          <p>Exemplos de <i>tecnologias de publicidade e rastreamento on-line</i> incluem:</p>
+          <div>
+            <p><b>●	<i>Cookies</i>:</b> notoriamente conhecidos, consistindo em informações que um <i>website</i> coloca no disco rígido do seu computador quando você o visita. Da nossa parte conferimos a você, nosso usuário, gerenciamento completo sobre essa ferramenta, acessando nosso <b><i>Banner</i> LGPD</b>;</p>
+            <p><b>●	<i>Flash cookies</i>:</b> usados para armazenar suas preferências ou exibir conteúdo com base no que você visualiza nos <i>websites</i>, personalizando a visita. Anunciantes e provedores de serviços terceirizados também podem usar <i>Flash cookies</i> para coletar e armazenar informações;</p>
+            <p><b>●	AVISO DE DESTAQUE:</b></p>
+            <div style={{marginLeft: "3rem"}}>
+              <p>●	<i>Flash cookies</i> são diferentes dos <i>cookies</i> do navegador devido à quantidade, tipo e forma de armazenamento dos dados, sendo que as ferramentas de gerenciamento de cookies fornecidas pelo seu navegador não removerão os <i>Flash cookies</i>;</p>
+              <p>●	Caso você venha desabilitar os <i>cookies</i>, não terá acesso a muitos recursos que tornam a experiência de navegação mais eficiente, podendo comprometer a funcionalidade de alguns dos serviços disponibilizados;</p>
+            </div>
+            <p><b>●	<i>Web beacons</i>:</b> são pequenos pedaços de dados incorporados em imagens nas páginas de <i>websites</i>. <i>Web beacons</i> podem envolver a transmissão de informações para você e de suas informações diretamente para o responsável pelo <i>website</i>, para terceiro em nome do titular do <i>website</i> ou para outra parte de acordo com sua respectiva política de privacidade.</p>
+          </div>
+          <p>Nem todos os dados (informações) que as <i>tecnologias de publicidade e rastreamento on-line</i> carregam são pessoais. Porém, sendo dado pessoal, seu tempo de manutenção ligado a uma <i>tecnologia de publicidade e rastreamento on-line</i> deve-se regular pelo critério de necessidade, isto é, pode ser mantido pelo tempo necessário para cumprir a sua legítima finalidade.</p>
+          <p>Nós, da <b>NAPOLEON</b>, conforme a <b>Declaração de Compromisso com a Privacidade e com a Proteção dos Dados Pessoais</b>, sempre iremos oferecer possibilidades de gerenciamento quando se tratar de informações (dados) pessoais, coletando os consentimentos específicos sempre quando necessário.</p>
+
+          <br />
+          <p><b>Parte 3: Para que utilizamos os <i>cookies e outras tecnologias</i> em nosso website, plataforma, aplicativos e serviços vinculados?</b></p>
+          <br />
+          <p>Saiba que as informações colhidas e contidas nos nossos <i>cookies e outras tecnologias</i> são utilizadas com o objetivo de melhorar os serviços de navegação e de relacionamento, de modo a:</p>
+          <div>
+            <p>●	Permitir que um serviço reconheça seu dispositivo numa próxima visita;</p>
+            <p>●	Para que você não precise fornecer as mesmas informações várias vezes ao realizar uma tarefa durante uma sessão, seja no preenchimento de um formulário ou de uma pesquisa <i>on-line</i>;</p>
+            <p>●	Conferir suporte à funcionalidade à navegação personalizada;</p>
+            <p>●	Permitir que o reprodutor de vídeo funcione adequadamente medindo quantas pessoas estão utilizando os serviços, de modo que a utilização de tais serviços seja facilitada e garantindo que haja capacidade suficiente para manter sua agilidade;</p>
+            <p>●	Analisando dados anônimos para nos ajudar a compreender como as pessoas interagem com os diferentes aspectos dos nossos serviços <i>on-line</i> com vistas ao seu aprimoramento;</p>
+            <p>●	Gerar uma melhoria na forma de divulgação de nossos produtos e serviços visando a objetividade, transparência e dinamismo;</p>
+            <p>●	Possibilitar a melhoria nos nossos produtos e serviços em seu favor.</p>
+          </div>
+
+          <br />
+          <p><b>Parte 4: Gerenciando seus <i>cookies e outras tecnologias</i>!</b></p>
+          <br />
+          <p>Objetivando a total transparência nos nossos procedimentos, utilizamos como ferramenta um <b><i>Banner</i> LGPD</b>, consistindo naquela <i>janelinha</i> destacada dentro do nosso <i>website</i>, sendo um instrumento de gerenciamento da experiência de navegação, acionando ou desativando funcionalidades. Confira abaixo:</p>
+          <img style={{objectFit: "contain"}} src="/assets/img/acta_janela.png" alt="Janela do cookie banner" width="100%" height={370} />
+          <p>Em quaisquer casos de dúvidas, erros, sugestões ou problemas de utilização da plataforma concernentes ao emprego de <i>cookies e outras tecnologias</i>, pedimos para contatar o <i>Canal de Comunicação do Usuário</i> por meio do <a href="mailto:lgpd@napoleon.com.br">lgpd@napoleon.com.br</a> ou, como última instância, utilizar o <i>Canal de Comunicação com o Encarregado da Proteção da Privacidade e dos Dados Pessoais</i>, por meio do <a href="mailto:encarregado@actatechlaw.com.br">encarregado@actatechlaw.com.br</a>.</p>
+          <p>Independente desse gerenciamento das próprias configurações presentes no nosso <i>website</i>, o usuário, titular de dados pessoas, pode, a qualquer momento, mesmo depois de autorizado o uso de <i>cookies e outras tecnologias</i> por meio do <b><i>Banner</i> LGPD</b>, decidir ser notificado sobre a recepção de <i>cookies</i>, bem como bloquear a respectiva entrada no seu sistema por meio da desativação de parte ou da totalidade dos nossos <i>cookies e outras tecnologias</i>.</p>
+          <p>A maioria dos navegadores de internet (<i>browser</i>) permite que você escolha se aceita os <i>cookies e outras tecnologias</i>. A maioria também permite eliminar os <i>cookies e outras tecnologias</i> já definidos. As opções disponíveis e o mecanismo usado variam de navegador para navegador. Essas configurações do navegador são normalmente encontradas no menu &quot;opções&quot;, &quot;ferramentas&quot; ou &quot;preferências&quot;. Você também poderá consultar o menu &quot;ajuda&quot; do navegador.</p>
+          <p>Nos próprios <i>browsers</i> (também conhecido como navegador, correspondendo a um programa criado para permitir a navegação pela internet) é possível ao usuário, titular de dados pessoais aceitar, recusar ou apagar <i>cookies</i> (com exceção, normalmente, dos <i>cookies</i> essenciais ou necessários), utilizando comandos de configuração do seu <i>browser</i>.</p>
+          <p>Alerta-se que a recusa de <i>cookies e outras tecnologias</i> pode vir a prejudicar a navegação, com comprometimento de certos serviços, áreas do <i>website</i> ou não envio de informações de sua preferência. Por isso, fique atento: lembre-se sempre que, ao desativar <i>cookies</i> e outras tecnologias de rastreamento <i>on-line</i>, partes do nosso <i>website</i> podem não funcionar corretamente. Caso a eliminação seja após a saída do website, tenha em mente que todas as definições e preferências controladas por aqueles <i>cookies</i> e outras tecnologias serão descartadas e necessitarão serem recriadas quando do retorno ao <i>website</i>.</p>
+
+          <br />
+          <p><b>Parte 5: Demais documentos legais</b></p>
+          <br />
+          <p>Para conhecimento completo de todas nossas normas de condução, recomendamos a leitura da nossa <b><i>Política de Privacidade</i></b>, do <b><i>Termo de Uso do Website</i></b>, e da <b><i>Política de Cordialidade</i></b> e <b><i>Política de E-commerce</i></b>.</p>
+          <p>Estamos sempre à disposição para esclarecer suas dúvidas, atender suas solicitações ou ouvi-lo nas suas demandas e colocá-lo no controle dos seus dados pessoais. Conte conosco para mantê-lo informado!</p>
+          <p style={{ textAlign: "center" }}><b>NAPOLEON</b></p>
         </div>
 
         <Footer settings={settings} segments={segments} />

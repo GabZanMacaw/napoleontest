@@ -1,16 +1,6 @@
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import Skeleton from "react-loading-skeleton";
-
-import LogoBrancoImg from "assets/svg/logo-branco.svg";
-import EmailImg from "assets/svg/email-icon.svg";
-import PhoneImg from "assets/svg/phone-icon.svg";
-import MarkerImg from "assets/svg/marker-icon.svg";
-import FacebookLogo from "assets/svg/facebook-icon.svg";
-import InstagramLogo from "assets/svg/instagram-icon.svg";
-import LinkedinLogo from "assets/svg/linkedin-icon.svg";
-import MacawImg from "assets/svg/macaw.svg";
 
 export default function Footer({ settings, segments }: any) {
   const [mounted, setMounted] = useState(false);
@@ -30,10 +20,9 @@ export default function Footer({ settings, segments }: any) {
         <div>
           <Link href="/">
             <a className="logo">
-              <Image
-                src={LogoBrancoImg}
-                width={LogoBrancoImg.width}
-                height={LogoBrancoImg.height}
+              <img
+                style={{objectFit: "none"}}
+                src="/assets/svg/logo-branco.svg"
                 alt="Logo Napoleon"
               />
             </a>
@@ -47,10 +36,9 @@ export default function Footer({ settings, segments }: any) {
           >
             <div className="info">
               <div>
-                <Image
-                  src={EmailImg}
-                  width={EmailImg.width}
-                  height={EmailImg.height}
+                <img
+                  style={{objectFit: "none"}}
+                  src="/assets/svg/email-icon.svg"
                   alt="Email Icone"
                 />
               </div>
@@ -59,10 +47,9 @@ export default function Footer({ settings, segments }: any) {
           </a>
           <div className="info">
             <div>
-              <Image
-                src={PhoneImg}
-                width={PhoneImg.width}
-                height={PhoneImg.height}
+              <img
+                style={{objectFit: "none"}}
+                src="/assets/svg/phone-icon.svg"
                 alt="Telefone Icone"
               />
             </div>
@@ -84,10 +71,9 @@ export default function Footer({ settings, segments }: any) {
           </div>
           <div className="info address">
             <div>
-              <Image
-                src={MarkerImg}
-                width={MarkerImg.width}
-                height={MarkerImg.height}
+              <img
+                style={{objectFit: "none"}}
+                src="/assets/svg/marker-icon.svg"
                 alt="Marcador Icone"
               />
             </div>
@@ -148,10 +134,9 @@ export default function Footer({ settings, segments }: any) {
             target="_blank"
             rel="nofollow noreferrer"
           >
-            <Image
-              src={FacebookLogo}
-              width={FacebookLogo.width}
-              height={FacebookLogo.height}
+            <img
+              style={{objectFit: "none"}}
+              src="/assets/svg/facebook-icon.svg"
               alt="Logo Facebook"
             />
           </a>
@@ -160,10 +145,9 @@ export default function Footer({ settings, segments }: any) {
             target="_blank"
             rel="nofollow noreferrer"
           >
-            <Image
-              src={InstagramLogo}
-              width={InstagramLogo.width}
-              height={InstagramLogo.height}
+            <img
+              style={{objectFit: "none"}}
+              src="/assets/svg/instagram-icon.svg"
               alt="Logo Instagram"
             />
           </a>
@@ -172,10 +156,9 @@ export default function Footer({ settings, segments }: any) {
             target="_blank"
             rel="nofollow noreferrer"
           >
-            <Image
-              src={LinkedinLogo}
-              width={LinkedinLogo.width}
-              height={LinkedinLogo.height}
+            <img
+              style={{objectFit: "none"}}
+              src="/assets/svg/linkedin-icon.svg"
               alt="Logo Linkedin"
             />
           </a>
@@ -187,10 +170,9 @@ export default function Footer({ settings, segments }: any) {
           target="_blank"
           rel="nofollow noreferrer"
         >
-          <Image
-            src={MacawImg}
-            width={MacawImg.width}
-            height={MacawImg.height}
+          <img
+            style={{objectFit: "none"}}
+            src="/assets/svg/macaw.svg"
             alt="Logo Macaw"
           />
         </a>

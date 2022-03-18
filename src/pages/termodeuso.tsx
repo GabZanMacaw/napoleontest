@@ -1,11 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import { NextSeo } from "next-seo";
 
 import styles from "styles/Termos.module.scss";
 
 import Header from "components/Header";
-import Title from "components/Title";
 import Footer from "components/Footer";
 import MainIntern from "components/MainIntern";
 

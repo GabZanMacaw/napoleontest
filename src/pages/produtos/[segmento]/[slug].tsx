@@ -1,6 +1,4 @@
-import Head from "next/head";
 import Link from "next/link";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import ImageGallery from "react-image-gallery";
 import { NextSeo } from "next-seo";
@@ -9,10 +7,7 @@ import ReactMarkdown from "react-markdown";
 
 import styles from "styles/Interna.module.scss";
 
-import LogoBrancoImg from "assets/svg/logo-branco.svg";
-
 import Header from "components/Header";
-import Button from "components/Button";
 import Footer from "components/Footer";
 import MainIntern from "components/MainIntern";
 import Title from "components/Title";
@@ -41,10 +36,9 @@ export default function Produtos({
   if (router.isFallback) {
     return (
       <div className="loading">
-        <Image
-          src={LogoBrancoImg}
-          width={LogoBrancoImg.width}
-          height={LogoBrancoImg.height}
+        <img
+          style={{objectFit: "none"}}
+          src="/assets/svg/logo-branco.svg"
           alt="Logo Napoleon"
         />
       </div>
@@ -139,7 +133,7 @@ export default function Produtos({
                 <h1>{product.title}</h1>
                 <div className={styles.segment}>
                   <div className={styles.image}>
-                    <Image
+                    <img
                       src={segmentImg}
                       width="100%"
                       height="100%"
@@ -200,6 +194,6 @@ export async function getStaticPaths() {
         params: { segmento: _product.segment.slug, slug: _product.slug },
       };
     }),
-    fallback: true,
+    fallback: false,
   };
 }

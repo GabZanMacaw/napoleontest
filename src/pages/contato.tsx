@@ -1,7 +1,5 @@
-import React, { FormEvent, useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { useRouter, withRouter } from "next/router";
+import React, { useState } from "react";
+import { useRouter } from "next/router";
 import Skeleton from "react-loading-skeleton";
 import { NextSeo, CorporateContactJsonLd } from "next-seo";
 
@@ -13,14 +11,8 @@ import Title from "components/Title";
 import Footer from "components/Footer";
 import MainIntern from "components/MainIntern";
 
-import ChatImg from "assets/svg/contato/chat-icon.svg";
-import PhoneImg from "assets/svg/contato/phone-icon.svg";
-import EmailImg from "assets/svg/contato/email-icon.svg";
-import FacebookLogo from "assets/svg/facebook-icon.svg";
-import InstagramLogo from "assets/svg/instagram-icon.svg";
-import LinkedinLogo from "assets/svg/linkedin-icon.svg";
-
 import { getSeoForPage, getSettingsContent, getSegments } from "../lib/api";
+import Link from "next/link";
 
 export default function Contato({ seo, settings, segments }: any) {
   const router = useRouter();
@@ -50,9 +42,9 @@ export default function Contato({ seo, settings, segments }: any) {
       to: process.env.EMAIL_TO_PUBLIC,
       subject: `Novo contato do site Napoleon`,
       html: `
-        <b>Nome: </b> ${state.nome} <br>
-        <b>E-mail: </b> ${state.email} <br>
-        <b>Celular: </b> ${state.celular} <br>
+        <b>Primeiro nome: </b> ${state.nome} <br>
+        <b>E-mail corporativo: </b> ${state.email} <br>
+        <b>Telefone geral ou corporativo: </b> ${state.celular} <br>
         <b>Assunto: </b> ${state.assunto} <br>
         <b>Mensagem: </b> ${state.mensagem}
       `,
@@ -138,10 +130,9 @@ export default function Contato({ seo, settings, segments }: any) {
         <section>
           <div className={styles.content}>
             <div className={styles.info} data-aos="fade-right">
-              <Image
-                src={ChatImg}
-                width={ChatImg.width}
-                height={ChatImg.height}
+              <img
+                style={{objectFit: "none"}}
+                src="/assets/svg/contato/chat-icon.svg"
                 alt="Chat Icone"
               />
               <div className={styles.title_div}>
@@ -156,10 +147,9 @@ export default function Contato({ seo, settings, segments }: any) {
                 data-aos="fade-right"
                 data-aos-delay="200"
               >
-                <Image
-                  src={PhoneImg}
-                  width={PhoneImg.width}
-                  height={PhoneImg.height}
+                <img
+                  style={{objectFit: "none"}}
+                  src="/assets/svg/contato/phone-icon.svg"
                   alt="Telefone Icone"
                 />
                 <div>
@@ -190,10 +180,9 @@ export default function Contato({ seo, settings, segments }: any) {
                 data-aos="fade-right"
                 data-aos-delay="300"
               >
-                <Image
-                  src={EmailImg}
-                  width={EmailImg.width}
-                  height={EmailImg.height}
+                <img
+                  style={{objectFit: "none"}}
+                  src="/assets/svg/contato/email-icon.svg"
                   alt="Email Icone"
                 />
                 <div>
@@ -222,10 +211,9 @@ export default function Contato({ seo, settings, segments }: any) {
                   data-aos="fade-up"
                   data-aos-delay="500"
                 >
-                  <Image
-                    src={FacebookLogo}
-                    width={FacebookLogo.width}
-                    height={FacebookLogo.height}
+                  <img
+                    style={{objectFit: "none"}}
+                    src="/assets/svg/facebook-icon.svg"
                     alt="Logo Facebook"
                   />
                 </a>
@@ -236,10 +224,9 @@ export default function Contato({ seo, settings, segments }: any) {
                   data-aos="fade-up"
                   data-aos-delay="600"
                 >
-                  <Image
-                    src={InstagramLogo}
-                    width={InstagramLogo.width}
-                    height={InstagramLogo.height}
+                  <img
+                    style={{objectFit: "none"}}
+                    src="/assets/svg/instagram-icon.svg"
                     alt="Logo Instagram"
                   />
                 </a>
@@ -250,10 +237,9 @@ export default function Contato({ seo, settings, segments }: any) {
                   data-aos="fade-up"
                   data-aos-delay="700"
                 >
-                  <Image
-                    src={LinkedinLogo}
-                    width={LinkedinLogo.width}
-                    height={LinkedinLogo.height}
+                  <img
+                    style={{objectFit: "none"}}
+                    src="/assets/svg/linkedin-icon.svg"
                     alt="Logo Linkedin"
                   />
                 </a>
@@ -266,13 +252,13 @@ export default function Contato({ seo, settings, segments }: any) {
                     <input
                       type="text"
                       name="nome"
-                      placeholder="Nome"
+                      placeholder="Primeiro nome"
                       onChange={(e) => {
                         handleChange(e);
                       }}
                       required
                     />
-                    <label>Seu nome completo</label>
+                    <label>Seu primeiro nome</label>
                   </div>
                   <div className={styles.input_div}>
                     <input
@@ -284,19 +270,19 @@ export default function Contato({ seo, settings, segments }: any) {
                       }}
                       required
                     />
-                    <label>Seu e-mail</label>
+                    <label>E-mail corporativo</label>
                   </div>
                   <div className={styles.input_div}>
                     <input
                       type="tel"
                       name="celular"
-                      placeholder="Celular"
+                      placeholder="Telefone"
                       onChange={(e) => {
                         handleChange(e);
                       }}
                       required
                     />
-                    <label>Seu celular para contato</label>
+                    <label>Telefone geral ou corporativo</label>
                   </div>
                   <div className={styles.input_div}>
                     <input
@@ -321,6 +307,16 @@ export default function Contato({ seo, settings, segments }: any) {
                       required
                     />
                     <label>Mensagem do e-mail</label>
+                  </div>
+
+                  <p className={styles.p3}>
+                    Aviso!<br />
+                    Para seu conhecimento e segurança: as informações acima são de natureza corporativa, desprovidas de dados pessoais. A exceção é o “Primeiro nome”, o qual segue o parâmetro de anonimização. Eventuais dados pessoais lançados serão utilizados exclusivamente para procedimentos preliminares próprios das relações negociais B2B ou <span style={{color: "red"}}>B2G</span>, nos termos da LGPD 7º, V, razão pela qual coletamos sua concordância abaixo. No entanto, antes de consentir, pedimos que acesse e leia nossos termos e políticas, condição para permanecer navegando.
+                  </p>
+
+                  <div className={styles.aceito_div}>
+                    <input type="checkbox" name="aceito" id="aceito" required />
+                    <p className={styles.p4}>Li e aceito o aviso acima, bem como os <Link href="/docslegais">termos</Link> do website da Napoleon.</p>
                   </div>
 
                   <Button type="submit">

@@ -1,8 +1,5 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
-
-import LogoBrancoImg from "assets/svg/logo-branco.svg";
 
 type Props = {
   close?: any;
@@ -17,10 +14,9 @@ export default function Menu({ close, segments }: Props) {
     <div className="menu">
       <Link href="/">
         <a className="logo">
-          <Image
-            src={LogoBrancoImg}
-            width={LogoBrancoImg.width}
-            height={LogoBrancoImg.height}
+          <img
+            style={{objectFit: "none"}}
+            src="/assets/svg/logo-branco.svg"
             alt="Logo Napoleon"
           />
         </a>

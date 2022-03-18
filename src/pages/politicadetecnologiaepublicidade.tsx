@@ -1,13 +1,8 @@
-import Image from "next/image";
-import Link from "next/link";
 import { NextSeo } from "next-seo";
 
 import styles from "styles/Termos.module.scss";
 
-import CookiesImg from "assets/img/termos/cookies.png";
-
 import Header from "components/Header";
-import Title from "components/Title";
 import Footer from "components/Footer";
 import MainIntern from "components/MainIntern";
 
@@ -300,10 +295,9 @@ export default function TermoDeUso({ settings, segments }: any) {
             ferramentas conforme sua escolha.
           </p>
           <p>
-            <Image
-              src={CookiesImg}
-              width={CookiesImg.width}
-              height={CookiesImg.height}
+            <img
+              style={{objectFit: "none"}}
+              src="/assets/img/termos/cookies.png"
               alt="Cookies"
             />
           </p>

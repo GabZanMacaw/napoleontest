@@ -1,14 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import useDropdownMenu from "react-accessible-dropdown-menu-hook";
 
 import styles from "styles/Header.module.scss";
-import LogoImg from "assets/svg/logo.svg";
-import FacebookLogo from "assets/svg/facebook-icon-blue.svg";
-import InstagramLogo from "assets/svg/instagram-icon-blue.svg";
-import LinkedinLogo from "assets/svg/linkedin-icon-blue.svg";
-import dropdownIcon from "assets/svg/dropdown-icon.svg";
 
 import Popup from "reactjs-popup";
 import BurgerIcon from "../components/BurgerIcon";
@@ -49,10 +43,10 @@ export default function Header({ settings, segments }: any) {
 				>
 					<Link href="/">
 						<a className={styles.logo}>
-							<Image
-								src={LogoImg}
-								width={LogoImg.width}
-								height={LogoImg.height}
+							<img
+								style={{objectFit: "contain"}}
+								width="100%"
+								src="/assets/svg/logo.svg"
 								alt="Logo Napoleon"
 							/>
 						</a>
@@ -80,10 +74,9 @@ export default function Header({ settings, segments }: any) {
 									role="menu"
 								>
 									<span className={styles.dropdownIcon}>
-										<Image
-											src={dropdownIcon}
-											width={dropdownIcon.width}
-											height={dropdownIcon.height}
+										<img
+											style={{objectFit: "none"}}
+											src="/assets/svg/dropdown-icon.svg"
 											alt="Clique para expandir"
 										/>
 									</span>
@@ -101,10 +94,11 @@ export default function Header({ settings, segments }: any) {
 													{...itemProps[0]}
 												>
 													<a>
-														<Image
+														<img
+															style={{objectFit: "contain"}}
 															src={iconUrl}
-															width={30}
-															height={30}
+															width="30px"
+															height="30px"
 															alt={segment.name}
 														/>
 														{segment.name}
@@ -127,10 +121,9 @@ export default function Header({ settings, segments }: any) {
 								target="_blank"
 								rel="noreferrer nofollow"
 							>
-								<Image
-									src={FacebookLogo}
-									width={FacebookLogo.width}
-									height={FacebookLogo.height}
+								<img
+									style={{objectFit: "none"}}
+									src="/assets/svg/facebook-icon-blue.svg"
 									alt="Logo Facebook"
 								/>
 							</a>
@@ -139,10 +132,9 @@ export default function Header({ settings, segments }: any) {
 								target="_blank"
 								rel="noreferrer nofollow"
 							>
-								<Image
-									src={InstagramLogo}
-									width={InstagramLogo.width}
-									height={InstagramLogo.height}
+								<img
+									style={{objectFit: "none"}}
+									src="/assets/svg/instagram-icon-blue.svg"
 									alt="Logo Instagram"
 								/>
 							</a>
@@ -151,10 +143,9 @@ export default function Header({ settings, segments }: any) {
 								target="_blank"
 								rel="noreferrer nofollow"
 							>
-								<Image
-									src={LinkedinLogo}
-									width={LinkedinLogo.width}
-									height={LinkedinLogo.height}
+								<img
+									style={{objectFit: "none"}}
+									src="/assets/svg/linkedin-icon-blue.svg"
 									alt="Logo Linkedin"
 								/>
 							</a>

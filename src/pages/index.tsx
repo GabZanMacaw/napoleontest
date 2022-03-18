@@ -1,6 +1,4 @@
-import React, { useEffect, FormEvent, useState } from "react";
-import Head from "next/head";
-import Image from "next/image";
+import React, { FormEvent, useState } from "react";
 import Link from "next/link";
 import { useRouter, withRouter } from "next/router";
 import { Parallax } from "react-scroll-parallax";
@@ -18,20 +16,6 @@ import Simple from "components/Simple";
 import Title from "components/Title";
 import CarouselSegment from "components/CarouselSegment";
 import Footer from "components/Footer";
-
-import LixasImg from "assets/img/lixas.png";
-import DiffImg from "assets/img/diff.png";
-import DiffMobileImg from "assets/img/diff_mobile.png";
-import DuvidaImg from "assets/svg/duvida-icon.svg";
-import MapaImg from "assets/svg/mapa-sobre.svg";
-import FogueteImg from "assets/svg/diff/foguete.svg";
-import RendimentoImg from "assets/svg/diff/rendimento.svg";
-import CompetitivoImg from "assets/svg/diff/competitivo.svg";
-import EntregaImg from "assets/svg/diff/entrega.svg";
-import ProducaoImg from "assets/svg/diff/producao.svg";
-import ItaliaImg from "assets/svg/diff/italia.svg";
-import FlechasVermelhaImg from "assets/svg/diff/diff-arrows.svg";
-import CatalogoImg from "assets/img/catalogo.png";
 
 import {
   getSeoForPage,
@@ -159,10 +143,9 @@ export default function Home({
                     data-aos="fade-right"
                     data-aos-delay="300"
                   >
-                    <Image
-                      src={DuvidaImg}
-                      width={DuvidaImg.width}
-                      height={DuvidaImg.height}
+                    <img
+                      style={{objectFit: "none"}}
+                      src="/assets/svg/duvida-icon.svg"
                       alt="Dúvida"
                     />
                     <p className={styles.p2_averta}>Entre em contato</p>
@@ -177,11 +160,9 @@ export default function Home({
           <section className={styles.segmentos}>
             <div className={styles.image_lixas}>
               <Parallax y={[20, -40]} tagOuter="figure">
-                <Image
-                  src={LixasImg}
-                  width={LixasImg.width}
-                  height={LixasImg.height}
-                  placeholder="blur"
+                <img
+                  style={{objectFit: "none"}}
+                  src="/assets/img/lixas.png"
                   alt="Foto Lixas"
                 />
               </Parallax>
@@ -201,10 +182,9 @@ export default function Home({
           <section>
             <div className={styles.sobre}>
               <div className={styles.sobre_img} data-aos="fade-up">
-                <Image
-                  src={MapaImg}
-                  width={MapaImg.width}
-                  height={MapaImg.height}
+                <img
+                  style={{objectFit: "none"}}
+                  src="/assets/svg/mapa-sobre.svg"
                   alt="Mapa ilustrativo"
                 />
               </div>
@@ -229,10 +209,9 @@ export default function Home({
           <section>
             <div className={styles_diff.diff}>
               <div className={styles_diff.diff_image_mob}>
-                <Image
-                  src={DiffMobileImg}
-                  width={DiffMobileImg.width}
-                  height={DiffMobileImg.height}
+                <img
+                  style={{objectFit: "none"}}
+                  src="/assets/img/diff_mobile.png"
                   alt="Nossos Diferenciais"
                 />
               </div>
@@ -250,7 +229,7 @@ export default function Home({
                       key={i}
                     >
                       <div className={styles_diff.image}>
-                        <Image
+                        <img
                           src={imageUrl}
                           width="100%"
                           height="100%"
@@ -273,10 +252,9 @@ export default function Home({
               </div>
               <div className={styles_diff.diff_image}>
                 <Parallax y={[40, -20]} tagOuter="figure">
-                  <Image
-                    src={DiffImg}
-                    width={DiffImg.width}
-                    height={DiffImg.height}
+                  <img
+                    style={{objectFit: "none"}}
+                    src="/assets/img/diff.png"
                     alt="Nossos Diferenciais"
                   />
                 </Parallax>
@@ -285,10 +263,9 @@ export default function Home({
                   y={[-80, 30]}
                   tagOuter="figure"
                 >
-                  <Image
-                    src={FlechasVermelhaImg}
-                    width={FlechasVermelhaImg.width}
-                    height={FlechasVermelhaImg.height}
+                  <img
+                    style={{objectFit: "none"}}
+                    src="/assets/svg/diff/diff-arrows.svg"
                     alt="Flecha vermelha apontando para baixo"
                   />
                 </Parallax>
@@ -313,12 +290,22 @@ export default function Home({
                   <input
                     type="email"
                     name="email"
-                    placeholder="E-mail"
+                    placeholder="E-mail corporativo"
                     required
                     onChange={(event) => setNewEmail(event.target.value)}
                     value={newEmail}
                   />
                   <label>Seu e-mail</label>
+                </div>
+
+                <p className={styles_catalogo.p2}>
+                  Aviso!<br />
+                  Para seu conhecimento e segurança: as informações acima são de natureza corporativa, desprovidas de dados pessoais. Eventualmente, poderão ser recebidos e-mails pessoais, os quais seguirão o parâmetro de anonimização e serão utilizados exclusivamente para procedimentos preliminares próprios das relações negociais B2B ou <span style={{color: "red"}}>B2G</span>, nos termos da LGPD 7º, V, razão pela qual coletamos sua concordância abaixo. No entanto, antes de consentir, pedimos que acesse e leia nossos termos e políticas, condição para permanecer navegando.
+                </p>
+
+                <div className={styles_catalogo.aceito_div}>
+                  <input type="checkbox" name="aceito" id="aceito" required />
+                  <p className={styles_catalogo.p2}>Li e aceito o aviso acima, bem como os <Link href="/docslegais">termos</Link> do website da Napoleon.</p>
                 </div>
 
                 <Button isSecondary type="submit" disabled={newCatalogDownload}>
@@ -327,11 +314,9 @@ export default function Home({
               </form>
             </div>
             <div className={styles_catalogo.catalogo_img} data-aos="fade-down">
-              <Image
-                src={CatalogoImg}
-                width={CatalogoImg.width}
-                height={CatalogoImg.height}
-                placeholder="blur"
+              <img
+                style={{objectFit: "none"}}
+                src="/assets/img/catalogo.png"
                 alt="Baixe nosso catálogo"
               />
             </div>

@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 // import Swiper core and required modules
@@ -59,14 +58,15 @@ export default function CarouselSegment({ segments = [] }:Props) {
               <div className={`${isActive ? styles.active : ""}`}>
                 <Link href={`/produtos/${segment.slug}`}>
                   <div className={styles.box_segmento}>
-                    <Image src={backgroundUrl} width="384px" height="496px" alt={segment.name} />
+                    <img src={backgroundUrl} width="384px" height="496px" alt={segment.name} />
                     <div className={styles.after}>
                       <div className={styles.text}>
                         <div className={styles.box_svg}>
-                          <Image
+                          <img
                             src={iconUrl}
                             alt={segment.name}
-                            layout="fill"
+                            width="100%"
+                            height="100%"
                           />
                         </div>
                         <p className={styles.p1averta}>{segment.name}</p>

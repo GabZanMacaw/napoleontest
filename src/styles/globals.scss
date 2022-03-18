@@ -515,6 +515,7 @@ h3.averta {
 h3.gradient {
   background: linear-gradient(90deg, #21256b -2.72%, #5960dc 95.74%);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 10px;
 }
@@ -1062,4 +1063,8 @@ footer .macaw {
   html:not(.no-js) [data-aos^="flip"] {
     transform: none !important;
   }
+}
+
+body {
+  overflow-x: hidden;
 }

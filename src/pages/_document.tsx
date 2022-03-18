@@ -31,6 +31,9 @@ export default class MyDocument extends Document {
             href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&family=Montserrat:wght@300;600&display=swap"
             rel="stylesheet"
           />
+
+          {/* ACTA */}
+          <script type="text/javascript" src="https://www.actatechlaw.com.br/www/js/widget.js?c=0716d9708d321ffb6a00818614779e779925365c"></script>
         </Head>
         <body>
           <Main />

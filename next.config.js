@@ -9,7 +9,6 @@ module.exports = withPWA({
     //domains: ["localhost"],
     domains: ["res.cloudinary.com"],
   },
-  assetPrefix: isProd ? "/napoleontest/" : "",
 });
 
 // module.exports = {

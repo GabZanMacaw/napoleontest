@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
 
 import Button from "components/Button";
 
@@ -36,7 +35,7 @@ export default function ProductCard({ product, segment }: Props) {
         <a>
           <div className={styles.image}>
             <div className={styles.image_hover}>
-              <Image
+              <img
                 src={hoverImageUrl}
                 width="384px"
                 height="355px"
@@ -44,7 +43,7 @@ export default function ProductCard({ product, segment }: Props) {
               />
             </div>
             <div className={styles.image_top}>
-              <Image
+              <img
                 src={imageUrl}
                 width="384px"
                 height="355px"

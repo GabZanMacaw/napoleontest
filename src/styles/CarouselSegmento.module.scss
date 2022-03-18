@@ -16,7 +16,7 @@
     cursor: pointer;
 
     .box_svg {
-      width: 142px !important;
+      width: 161px !important;
       height: 120px !important;
       transform: translate(0, 0);
 
@@ -51,7 +51,7 @@
 
     .box_svg {
       height: 3vmin;
-      transform: translate(-35px, 4px);
+      width: fit-content;
     }
 
     .after {

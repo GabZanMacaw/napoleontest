@@ -1,16 +1,11 @@
-import { useState } from "react";
-import { useRouter, withRouter } from "next/router";
+import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
 import { NextSeo } from "next-seo";
 import { isMobile } from "react-device-detect";
 
 import styles from "styles/Interna.module.scss";
 
-import LogoBrancoImg from "assets/svg/logo-branco.svg";
-
 import Header from "components/Header";
-import Button from "components/Button";
 import Footer from "components/Footer";
 import MainIntern from "components/MainIntern";
 import Title from "components/Title";
@@ -34,10 +29,9 @@ export default function Segmentos({ segment, moreSegments, settings }: any) {
 	if (router.isFallback) {
 		return (
 			<div className="loading">
-				<Image
-					src={LogoBrancoImg}
-					width={LogoBrancoImg.width}
-					height={LogoBrancoImg.height}
+				<img
+					style={{objectFit: "none"}}
+					src="/assets/svg/logo-branco.svg"
 					alt="Logo Napoleon"
 				/>
 			</div>
@@ -177,6 +171,6 @@ export async function getStaticPaths() {
 				params: { segmento: _segment.slug },
 			};
 		}),
-		fallback: true,
+		fallback: false,
 	};
 }

@@ -1,64 +1,87 @@
 .catalogo_fundo {
-	width: 100%;
-	background: url("../assets/img/fundo-catalogo.png") no-repeat top center;
-	background-size: cover;
-	overflow: hidden;
-	margin-top: 300px;
-	overflow: initial;
+  width: 100%;
+  background: url("../assets/img/fundo-catalogo.png") no-repeat top center;
+  background-size: cover;
+  overflow: hidden;
+  margin-top: 300px;
+  overflow: initial;
 
-	@media (max-width: 961px) {
-		margin-top: 0;
-	}
+  @media (max-width: 961px) {
+    margin-top: 0;
+  }
 
-	@media (max-width: 541px) {
-		margin-top: -40%;
-	}
+  @media (max-width: 541px) {
+    margin-top: -40%;
+  }
 
-	section {
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		padding-top: 155px;
-		padding-bottom: 168px;
+  section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 155px;
+    padding-bottom: 168px;
 
-		@media (max-width: 961px) {
-			justify-content: center;
-			align-items: center;
-			text-align: center;
-		}
+    @media (max-width: 961px) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
 
-		@media (max-width: 541px) {
-			padding-top: 225px;
-		}
-	}
+    @media (max-width: 541px) {
+      padding-top: 225px;
+    }
+  }
 
-	.content {
-		max-width: 500px;
-	}
+  .content {
+    max-width: 500px;
+  }
 
-	form,
-	.input_div {
-		margin-top: 35px;
-	}
+  form,
+  .input_div {
+    margin-top: 35px;
+  }
 
-	.input_div {
-		margin-bottom: 48px;
-	}
+  .input_div {
+    margin-bottom: 48px;
+  }
 
-	.p1 {
-		font-family: "Roboto";
-		font-style: normal;
-		font-weight: normal;
-		font-size: 18px;
-		line-height: 150%;
-		color: #8991a4;
-	}
+  .aceito_div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    input {
+      width: 1rem;
+      height: 1rem;
+    }
+    p {
+      line-height: 100%;
+      margin: 0;
+    }
+  }
 
-	.catalogo_img {
-		margin-top: -21%;
+  .p1 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+    color: #8991a4;
+  }
 
-		@media (max-width: 961px) {
-			display: none;
-		}
-	}
+  .p2 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #8991a4;
+  }
+
+  .catalogo_img {
+    margin-top: -21%;
+
+    @media (max-width: 961px) {
+      display: none;
+    }
+  }
 }
