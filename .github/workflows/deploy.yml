@@ -1,36 +1,32 @@
-name: Deploy to Github Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - master
-
-  workflow_dispatch:
+    branches: [master]
 
 jobs:
-  deployment:
+  build:
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
+    strategy:
+      matrix:
+        node-version: [16.x]
 
-      - name: Setup Node
+    steps:
+      - name: Get files
+        uses: actions/checkout@v2
+      - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
-          node-version: "lts/*"
-          cache: "npm"
-
-      - name: Install
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install # will run `yarn install` command
-      - name: Build
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: build # will run `yarn build` command
-
+          node-version: ${{ matrix.node-version }}
+      - name: Install packages
+        run: yarn install
+      - name: Build and export project
+        run: yarn build
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./out
+          branch: gh-pages
+          folder: out
