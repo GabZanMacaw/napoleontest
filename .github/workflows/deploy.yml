@@ -23,7 +23,7 @@ jobs:
       - name: Install devDependencies
         run: sudo apt-get install libtool automake autoconf nasm
       - name: Create .env
-        run: echo "NEXT_PUBLIC_STRAPI_API_URL=${{ env.NEXT_PUBLIC_STRAPI_API_URL }}" > .env
+        run: echo "NEXT_PUBLIC_STRAPI_API_URL=${{ secrets.NEXT_PUBLIC_STRAPI_API_URL }}" > .env
       - name: Install packages
         run: yarn install
       - name: Build and export project
